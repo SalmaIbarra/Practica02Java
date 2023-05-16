@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblBienvenido"
+            android:textAlignment="center"
+            android:textSize="12pt"
+            android:text="Bienvenido: Salma">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblcm"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:text="Altura en Centímetros:">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtcm"
+            android:hint="cm"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:textSize="12pt">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblkg"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:text="Peso en Kilos:">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtkg"
+            android:hint="kg"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:textSize="12pt">
+
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblimc"
+            android:textAlignment="center"
+            android:textSize="11pt"
+            android:text="IMC:">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtimc"
+            android:hint="IMC"
+            android:enabled="false"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:textSize="12pt">
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalcular"
+            android:text="Calcular IMC"
+            android:backgroundTint="@color/design_default_color_primary_variant"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLimpiar"
+            android:text="Limpiar Campos">
+            android:backgroundTint="@color/design_default_color_primary_variant"
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCerar"
+            android:text="Cerrar App"
+            android:backgroundTint="@color/design_default_color_primary_variant">
+
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
